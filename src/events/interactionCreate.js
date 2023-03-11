@@ -1,4 +1,5 @@
-const { Events, InteractionType, ChatInputCommandInteraction, ButtonInteraction } = require("discord.js");
+const { Events, InteractionType, BaseInteraction, Client } = require("discord.js");
+const client = require("..");
 const { Commands, Components } = require("..");
 const logger = require('../functions/logger');
 
@@ -7,7 +8,7 @@ module.exports = {
     name: Events.InteractionCreate,
     /**
      * 
-     * @param {ChatInputCommandInteraction | ButtonInteraction } interaction 
+     * @param {BaseInteraction } interaction 
      */
     async run(interaction) {
 
@@ -22,7 +23,7 @@ module.exports = {
 
                 //run command
                 try {
-                    await command.run(interaction);
+                    await command.run(interaction, client);
                     logger.cmd(interaction.commandName + ' is executed successfully');
                 } catch (error) {
                     logger.error('Command: ' + interaction.commandName + ' error!');
@@ -34,18 +35,38 @@ module.exports = {
             case InteractionType.MessageComponent:
 
                 //get button
-                const key = interaction.customId.split('/')[0];
-                const button = Components.get(key);
+                {
+                    const key = interaction.customId.split('/')[0];
+                    const button = Components.get(key);
 
-                //execute button
+
+                    //execute button
+                    try {
+                        await button.run(interaction, client);
+                        logger.log('Button: ' + interaction.customId + ' is executed successfully');
+                    } catch (error) {
+                        logger.error('Button: ' + interaction.customId + ' error!');
+                        console.error(error);
+                    }
+                }
+                break;
+
+            // on modal submit
+            case InteractionType.ModalSubmit:
+
+                //get modal
+                const modal = Components.get(interaction.customId);
+
+                //submit modal
                 try {
-                    await button.run(interaction);
-                    logger.log(interaction.customId + ' is executed successfully');
+                    await modal.run(interaction, client);
+                    logger.log('Modal: ' + interaction.customId + ' is executed successfully');
                 } catch (error) {
-                    logger.error('button: ' + interaction.customId + ' error!');
+                    logger.error('Modal: ' + interaction.customId + ' error!');
                     console.error(error);
                 }
                 break;
+
         }
     }
 };
