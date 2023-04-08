@@ -1,10 +1,10 @@
 {
-	"name": "tester-bot",
+	"name": "sbz-bot",
 	"version": "0.1.1",
 	"engines": {
 		"node": ">=18.15.0"
 	},
-	"description": "test bot for deploy on render.",
+	"description": "SBZbot is a private bot for SBZsam discord server.",
 	"main": "src/index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
