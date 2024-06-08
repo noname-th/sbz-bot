@@ -1,6 +1,6 @@
 # **Sbz-bot**
 
-![logo](https://raw.githubusercontent.com/mr-a360/sbz-bot/main/src/assets/logo.png)
+
 ![discord.js](https://img.shields.io/badge/discord.js-14.7.1-green)
 ![repo](https://img.shields.io/github/last-commit/mr-a360/sbz-bot)
 ![license](https://img.shields.io/github/license/mr-a360/sbz-bot)
