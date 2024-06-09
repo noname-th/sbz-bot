@@ -1,10 +1,10 @@
 # **Sbz-bot**
 
-![logo](src/assets/logo%20(Small).png)
+![logo](src/assets/icon.png)
 
-![repo](https://img.shields.io/github/last-commit/mr-a360/sbz-bot)
-![license](https://img.shields.io/github/license/mr-a360/sbz-bot)
-![release](https://img.shields.io/github/release/mr-a360/sbz-bot)
+![repo](https://img.shields.io/github/last-commit/noname-th/sbz-bot)
+![license](https://img.shields.io/github/license/noname-th/sbz-bot)
+![release](https://img.shields.io/github/release/noname-th/sbz-bot)
 ![discord.js](https://img.shields.io/badge/discord.js-14.7.1-green)
 
 ## **ข้อมูลเบื้องต้น**
@@ -24,7 +24,7 @@
 
 ## **ข้อมูลเพิ่มเติม**
 
-- **Github repo** [Source code](https://github.com/mr-a360/sbz-bot)
+- **Github repo** [Source code](https://github.com/noname-th/sbz-bot)
 - **Hostng** [render.com](https://render.com)
 - **Framework / Library**
   - [discord.js](https://discord.js.org/)
