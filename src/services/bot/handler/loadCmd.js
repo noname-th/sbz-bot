@@ -1,4 +1,4 @@
-const { Commands } = require("../services/bot");
+const { Commands } = require("..");
 const loadfile = require("../../../functions/loadfile")
 
 module.exports = () => {

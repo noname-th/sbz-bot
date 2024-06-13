@@ -1,4 +1,4 @@
-const { Components } = require("../services/bot");
+const { Components } = require("..");
 const loadfile = require("../../../functions/loadfile")
 
 module.exports = () => {

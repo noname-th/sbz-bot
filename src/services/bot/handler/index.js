@@ -1,7 +1,7 @@
 const { Client } = require("discord.js");
 const loadCmd = require("./loadCmd");
 const loadEvent = require("./loadEvent");
-const logger = require("../functions/logger");
+const logger = require("../../../functions/logger");
 const loadComponents = require("./loadComponents");
 
 /**
@@ -24,7 +24,7 @@ module.exports = async (client) => {
         cmd.forEach(cmd => logger.log('loaded: ' + cmd.name));
 
         console.log('---Events---');
-        ev.forEach(ev => logger.log('loadded: ' + ev.name));
+        ev.forEach(ev => logger.log('loaded: ' + ev.name));
 
         console.log('---Components---');
         comp.forEach(comp => logger.log('loaded: ' + comp.customId));

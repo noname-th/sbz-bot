@@ -1,6 +1,6 @@
 const { Events, InteractionType, BaseInteraction, Client } = require("discord.js");
 const client = require("../../..");
-const { Commands, Components } = require("../../..");
+const { Commands, Components } = require("..");
 const logger = require('../../../functions/logger');
 
 module.exports = {

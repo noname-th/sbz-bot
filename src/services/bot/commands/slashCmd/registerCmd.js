@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require("@discordjs/builders");
 const { PermissionFlagsBits, Client, ChatInputCommandInteraction, ChannelType, Message } = require("discord.js");
-const logger = require('../../functions/logger');
+const logger = require('../../../../functions/logger');
 const regData = require('../../components/registerData')
 
 

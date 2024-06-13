@@ -1,5 +1,5 @@
 const { Client, GatewayIntentBits, Collection } = require('discord.js');
-const logger = require('../functions/logger');
+const logger = require('../../functions/logger');
 
 // create a client instance
 const client = new Client({
@@ -18,4 +18,4 @@ client.Commands = new Collection();
 client.Components = new Collection();
 
 // connect handler
-require('../handler')(client);
+require('./handler')(client);
