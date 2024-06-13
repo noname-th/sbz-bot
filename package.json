@@ -2,7 +2,7 @@
 	"name": "sbz-bot",
 	"version": "0.1.2",
 	"engines": {
-		"node": ">=18.15.0"
+		"node": ">=18.17.0"
 	},
 	"description": "SBZbot is a private bot for SBZsam discord server.",
 	"main": "src/index.js",
@@ -26,6 +26,6 @@
 		"sharp": "0.33.4"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.20"
+		"nodemon": "^3.1.3"
 	}
 }

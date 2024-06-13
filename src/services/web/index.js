@@ -1,4 +1,3 @@
-const logger = require('../functions/logger');
 const express = require('express');
 
 // set up express app

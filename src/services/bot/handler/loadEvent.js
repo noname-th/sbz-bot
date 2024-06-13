@@ -1,5 +1,5 @@
 const { Client } = require("discord.js");
-const loadfile = require("../functions/loadfile")
+const loadfile = require("../../../functions/loadfile")
 
 /**
  * 

@@ -1,6 +1,6 @@
 const logger = require('./functions/logger');
 const client = require('./services/bot');
-const app = require('./services/app');
+const app = require('./services/web');
 
 require('dotenv').config();
 // set env

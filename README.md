@@ -4,8 +4,9 @@
 
 ![repo](https://img.shields.io/github/last-commit/noname-th/sbz-bot)
 ![license](https://img.shields.io/github/license/noname-th/sbz-bot)
-![release](https://img.shields.io/github/release/noname-th/sbz-bot)
 ![discord.js](https://img.shields.io/badge/discord.js-14.7.1-green)
+![express](https://img.shields.io/badge/express-4.18.2-green)
+![ejs](https://img.shields.io/badge/ejs-3.1.8-green)
 
 ## **ข้อมูลเบื้องต้น**
 
