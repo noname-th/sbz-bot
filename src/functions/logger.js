@@ -3,9 +3,9 @@ exports.log = (content, type = 'log') => {
 
     switch (type) {
         case "log": return console.log(`[${type.toUpperCase()}] ${content} `);
-        case "warn": return console.log(`[${type.toUpperCase()}] ${content} `);
-        case "error": return console.log(`[${type.toUpperCase()}] ${content} `);
-        case "debug": return console.log(`[${type.toUpperCase()}] ${content} `);
+        case "warn": return console.warn(`[${type.toUpperCase()}] ${content} `);
+        case "error": return console.error(`[${type.toUpperCase()}] ${content} `);
+        case "debug": return console.debug(`[${type.toUpperCase()}] ${content} `);
         case "cmd": return console.log(`[${type.toUpperCase()}] ${content}`);
         case "database": return console.log(`[${type.toUpperCase()}] ${content}`);
         case "ready": return console.log(`[${type.toUpperCase()}] ${content}`);
