@@ -17,12 +17,13 @@
 		"url": "https://github.com/noname-th/sbz-bot.git"
 	},
 	"dependencies": {
-		"@discordjs/builders": "^1.4.0",
-		"discord.js": "^14.7.1",
-		"dotenv": "^16.0.3",
-		"ejs": "^3.1.8",
-		"express": "^4.18.2",
-		"glob": "^8.1.0",
+		"@discordjs/builders": "^1.8.2",
+		"discord.js": "^14.15.3",
+		"dotenv": "^16.4.5",
+		"ejs": "^3.1.10",
+		"express": "^4.19.2",
+		"glob": "^10.4.1",
+		"markdown-it": "^14.1.0",
 		"sharp": "0.33.4"
 	},
 	"devDependencies": {
