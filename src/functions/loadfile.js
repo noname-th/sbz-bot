@@ -8,7 +8,7 @@ const path = require('path');
  */
 module.exports = (dirname) => {
 
-    const files = glob.sync(process.cwd().replace(/\\/g, '/') + `/src/${dirname}/**/*.js`);
+    const files = glob.sync(process.cwd().replace(/\\/g, '/') + `/src/services/bot/${dirname}/**/*.js`);
 
     // clear cache and skip file 
     files.forEach((file, i) => {

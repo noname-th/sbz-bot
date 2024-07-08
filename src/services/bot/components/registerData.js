@@ -1,15 +1,7 @@
-const {
-	EmbedBuilder,
-	ActionRowBuilder,
-	ButtonBuilder,
-} = require('@discordjs/builders');
-const {
-	ButtonStyle,
-	Role,
-	ButtonInteraction,
-	TextChannel,
-} = require('discord.js');
-const logger = require('../functions/logger');
+const { EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('@discordjs/builders');
+const { ButtonStyle, Role, ButtonInteraction, TextChannel } = require('discord.js');
+const logger = require('../../../functions/logger');
+
 
 module.exports = {
 	// component data and run

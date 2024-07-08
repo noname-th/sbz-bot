@@ -1,0 +1,9 @@
+.markdown-body {
+    color: #ffffff;
+    padding: 2em;
+    background-color: unset !important;
+}
+
+.markdown-body img {
+    background-color: unset !important;
+}

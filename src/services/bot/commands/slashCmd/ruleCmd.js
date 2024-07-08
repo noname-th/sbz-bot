@@ -1,6 +1,6 @@
 const { SlashCommandBuilder } = require('@discordjs/builders');
 const { ChatInputCommandInteraction, Client } = require('discord.js');
-const logger = require('../../functions/logger');
+const logger = require('../../../../functions/logger');
 
 
 module.exports = {
