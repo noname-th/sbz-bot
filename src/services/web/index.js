@@ -41,7 +41,7 @@ app.get('/readme', async (req, res) => {
 const run = async (port) => {
 	// Validate port number
 	if (typeof port !== 'number' || port < 0) {
-		throw new Error('Invalid port number');
+		throw new Error(`Invalid port number: "${port}"`);
 	}
 
 	// Load necessary modules

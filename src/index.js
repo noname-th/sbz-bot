@@ -9,7 +9,7 @@ const TOKEN = process.env.DISCORD_TOKEN;
 
 bot.on('ready', () => {
 	logger.ready(`${bot.user.username} is ready`);
-	web.run(PORT);
+	web.run(Number(PORT));
 
 });
 bot.login(TOKEN);
