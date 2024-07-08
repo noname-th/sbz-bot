@@ -1,5 +1,7 @@
 package-lock.json
 node_modules
+.vscode
 .env
 README.md
 pnpm-lock.yaml
+TODO

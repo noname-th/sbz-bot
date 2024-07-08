@@ -4,21 +4,28 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=720px, initial-scale=1.0" />
+	<meta name="viewport" content="width=720, initial-scale=1.0" />
+
+	<!-- Set the page title -->
 	<title>
 		<%= botName %>
 	</title>
+
+	<!-- Set the favicon -->
 	<link rel="shortcut icon" href="/favicon.png" type="image/png" />
 
+	<!-- Link the CSS stylesheets -->
 	<link rel="stylesheet" href="/css/index.css" />
 	<link rel="stylesheet" href="css/font.css" />
+	<link rel="stylesheet" href="css/gfmConfig.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@latest/github-markdown.css">
 
-	<!-- link fontawesome -->
+	<!-- Link the Font Awesome stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
 		integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-	<!-- link font from google fonts -->
+	<!-- Link the Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 	<link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet" />
@@ -29,52 +36,57 @@
 <body>
 	<!-- Header -->
 	<header>
-		<!-- show header logo -->
-		<div class="header-logo">
-			<!-- show logo -->
-			<img src="/favicon.png" alt="logo" style="padding-inline: 10px" width="100" />
-			<!-- show bot name -->
-			<h1 class="gluten-normal">
-				<%= botName %>
-			</h1>
-		</div>
+		<!-- Header logo -->
+		<a href="/" target="_self">
+			<div class="header-logo">
 
+				<!-- Logo -->
+				<img src="/favicon.png" alt="logo" style="padding-inline: 10px" width="100" />
 
-		<!-- show option menu link-->
-		<div class="header-link">
-			<div>
-				<a href="https://github.com/noname-th/sbz-bot" target="_blank">
-					<i class="fa-brands fa-github fa-2x"></i>
-					<span class="dongle-regular">Bot Repo</span>
-				</a>
+				<!-- Bot name -->
+				<h1 class="gluten-normal">
+					<%= botName %>
+				</h1>
 			</div>
-			<!-- show readme link-->
-			<div>
+		</a>
 
-				<a href="https://github.com/noname-th/sbz-bot/blob/main/README.md" target="_blank">
-					<i class="fa-brands fa-readme fa-2x"></i>
-					<span class="dongle-regular">Readme</span>
-				</a>
-			</div>
-		</div>
+		<!-- Navigation links -->
+		<nav class="header-link">
+
+			<!-- Readme link -->
+			<a href="/readme" target="_self">
+				<i class="fa-brands fa-readme fa-2x"></i>
+				<span class="dongle-regular">Readme</span>
+			</a>
+
+			<!-- GitHub link -->
+			<a href="https://github.com/noname-th/sbz-bot" target="_blank">
+				<i class="fa-brands fa-github fa-2x"></i>
+				<span class="dongle-regular">Bot Repository <i class="fa-solid fa-arrow-up-right-from-square"
+						style="font-size: 1Rem;"></i></span>
+			</a>
+		</nav>
 	</header>
 
 	<!-- Content -->
 	<div class="container">
 
-		<!-- show bot status -->
+		<!-- Bot status -->
 		<div class="outline">
 			<div class="loader dongle-regular">
 				<span class="bot-name">
-					<%= botName%>
+					<%= botName %>
 				</span>
 				<span class="status">running...</span>
 			</div>
 		</div>
+
+		<!-- Other content -->
+		<%- content %>
 	</div>
 
 	<footer>
-		<!-- show cradit -->
+		<!-- Credit -->
 		<b>
 			Created by:
 			<a href="https://github.com/noname-th" target="_blank">
@@ -82,10 +94,10 @@
 			</a>
 		</b>
 
-		<!-- show copyright -->
+		<!-- Copyright -->
 		<b style="justify-self: center">
-			&copy; 2023-<%= new Date().getFullYear() %>
-				<%= author %>. MIT License.
+			&copy; 2023
+			<%= author %>. MIT License.
 		</b>
 	</footer>
 </body>

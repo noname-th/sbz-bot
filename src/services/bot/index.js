@@ -3,14 +3,17 @@ const logger = require('../../functions/logger');
 
 // create a client instance
 const client = new Client({
-	intents: [
-		GatewayIntentBits.GuildMembers,
-		GatewayIntentBits.GuildMessages,
-		GatewayIntentBits.Guilds,
-		GatewayIntentBits.GuildWebhooks,
-		GatewayIntentBits.MessageContent,
-	],
+	intents:
+		[
+			GatewayIntentBits.Guilds,
+			GatewayIntentBits.GuildMembers,
+			GatewayIntentBits.GuildMessages,
+			GatewayIntentBits.Guilds,
+			GatewayIntentBits.GuildWebhooks,
+			GatewayIntentBits.MessageContent,
+		],
 });
+
 module.exports = client;
 
 // create collection
